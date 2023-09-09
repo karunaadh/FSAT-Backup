@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+/*---------Header---------*/
+#child-ombre {
+  width: 938px;
+  height: 274px;
+  object-fit: cover;
+  border-radius: 50% / 100%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  transform: rotate(180deg);
+}
+
+#parent-ombre {
+  display: flex;
+  justify-content: center;
+}
+
+.overlaptext {
+  position: absolute;
+  align-self: center;
+  text-align: center;
+}
+#title,
+#subtitle,
+#subtitle-two {
+  padding: 0px;
+  margin: 0px;
+}
+#title {
+  font-family: Anton;
+  font-size: 70px;
+}
+
+#subtitle {
+  color: #292929;
+  letter-spacing: 0.15em;
+  font-size: 15px;
+  font-weight: 100;
+  font-family: nimbus-sans-tw01con, sans-serif;
+  padding-bottom: 10px;
+}
+
+#subtitle-two {
+  letter-spacing: 0.15em;
+  color: #e21c21;
+  font-size: 12px;
+  font-family: nimbus-sans-tw01con, sans-serif;
+  font-weight: 100;
+  line-height: 150%;
+  width: 500px;
+}
+
+#icons {
+  padding-top: 10px;
+}
+
+/*------------------videos-------*/
+.videoparent {
+  display: flex;
+  justify-content: center;
+  margin: 4em 0 4em 0;
+}
+
+.videocap {
+  font-family: "Net Lulo";
+  font-weight: bold;
+  font-size: 25px;
+  color: #565656;
+  background-color: #fff0aa;
+  width: 288px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cap1,
+.cap2 {
+  text-align: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.cap1 {
+  align-self: flex-end;
+  margin: 0px -120px 30px 0px;
+  padding-bottom: 30px;
+}
+.toptape {
+  margin-top: -50px;
+}
+.cap2 {
+  margin: -30px 0px 0px -120px;
+}
+/*-------------Footer------------*/
+.prefooter {
+  display: flex;
+  justify-content: center;
+}
+.block {
+  width: 70vw;
+  height: 30px;
+  background-color: #e21c21;
+}
+/*-----------------------------*/
+/*------------Mobile----------*/
+@media only screen and (max-width: 800px) {
+  .main {
+    --s: 150px; /*width and height of diamond*/
+    --margintop: -80px;
+  }
+  #child-ombre {
+    width: 700px;
+    height: 200px;
+  }
+  #title {
+    font-size: 50px;
+  }
+  #subtitle {
+    font-size: 14px;
+  }
+  #subtitle-two {
+    font-size: 12px;
+  }
+  .body {
+    background-size: 475px;
+  }
+  .videocap {
+    font-size: 20px;
+    height: 130px;
+    padding: 0px 10px 10px 0px;
+  }
+  .block {
+    height: 20px;
+  }
+  #icons img {
+    height: 40px;
+  }
+}
+
+/*--------Realign videos section-----*/
+@media only screen and (max-width: 400px) {
+  .videossection {
+    height: 4250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  #child-ombre {
+    width: 408px;
+    height: 150px;
+  }
+  #title {
+    padding-top: 50px;
+    font-family: Anton;
+    font-size: 40px;
+  }
+
+  #subtitle {
+    font-size: 12px;
+    font-weight: 100;
+    font-family: nimbus-sans-tw01con, sans-serif;
+    padding-bottom: 10px;
+  }
+
+  #subtitle-two {
+    letter-spacing: 0.15em;
+    color: #e21c21;
+    font-size: 11px;
+  }
+
+  #subtitle,
+  #subtitle-two {
+    width: 300px;
+  }
+}
+/*---------------------------*/

@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open Sans Condensed:300');
+
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.body {
+  align-items: center;
+  justify-content: center;
+}
+
+/*-----------blob-------------*/
+.blob {
+  position: relative;
+  --blobheight: 600px;
+  height: var(--blobheight);
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.blobimg {
+  height: 500px;
+  width: auto;
+}
+
+.blobtext {
+  position: absolute;
+  margin-top: -100px;
+  max-height: var(--blobheight);
+  max-width: 250px;
+  align-self: center;
+  text-align: center;
+  color: #292929;
+}
+.blobtext h1 {
+  font-family: 'Anton', sans-serif;
+  font-size: 60px;
+  line-height: 1.2;
+}
+.blobtext p {
+  font-family: 'Nimbus', sans-serif;
+  letter-spacing: 0.15em;
+  font-size: 18px;
+  padding-top: 10px;
+}
+/*------------------------*/
+
+/*-------------Form-------------*/
+.submittext,
+.MLsubmittext {
+  color: #9b9105;
+  align-self: center;
+  padding-right: 15px;
+}
+.contactformbody {
+  padding-left: 50px;
+}
+.formcontainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formrow {
+  display: flex;
+  width: 540px;
+  justify-content: flex-end;
+}
+.formrow input {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ffd300;
+  margin: -1px;
+  font-family: 'Palatino Linotype';
+  font-size: 14px;
+  width: 260px;
+  height: 66px;
+  padding: 0px 10px;
+  outline: none;
+}
+
+.formrow input:hover {
+  border-color: black;
+  transition: all 0.3 easc-out;
+  transition: 250ms;
+}
+.inputtext input {
+  width: 559px;
+  height: 126px;
+}
+
+.formrow input::placeholder {
+  font-style: italic;
+  font-family: 'Palatino Linotype';
+  font-size: 14px;
+  color: black;
+}
+.submitbutton {
+  background-color: #ffd300;
+  padding: 20px;
+}
+.submitbutton:hover {
+  background-color: black;
+  color: white;
+  transition: all 0.3 ease-out;
+  transition: 250ms;
+  cursor: pointer;
+}
+
+.formheader,.mailinglistheader,.mapheader,.officehourheader{
+  font-family: 'Net Lulo';
+  font-weight: 800;
+}
+.formheader {
+  font-size: 35px;
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+
+.CUsection1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+/*------------------------*/
+.CUsection2 {
+  padding-top: 0px;
+  margin-top: -75px;
+}
+.mapsection {
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mapheader {
+  font-size: 20px;
+  padding: 3px 10px;
+}
+.mapheader,
+.officehourheader {
+  background-color: #f2e475;
+  color: #565656;
+}
+
+.officehourheader {
+  font-size: 24px;
+  padding-bottom: 10px;
+}
+
+.officehourinfo {
+  font-family: 'Nimbus', sans-serif;
+  letter-spacing: 0.15em;
+  width: 310px;
+  font-size: 20px;
+  background-color: #f2e475;
+  padding: 20px;
+}
+.officehourtime {
+  display: flex;
+  width: 300px;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.officehournotif {
+  padding-top: 10px;
+  font-size: 12px;
+  color: #e21c21;
+  height: min-content;
+  text-align: center;
+}
+.map {
+  display: flex;
+  flex-direction: row;
+}
+
+/*---------Contact info------------*/
+.socialicons,
+.contactinfo {
+  display: flex;
+  flex-direction: column;
+}
+.socialicons {
+  height: 132px;
+  padding: 0px 10px;
+}
+.CIchild {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.contactinfo a {
+  all: inherit;
+  cursor: pointer;
+}
+.contactinfo {
+  justify-content: center;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #292929;
+  padding-left: 10px;
+  background: linear-gradient(to right, white, #f2e475);
+  width: 248px;
+  height: 132px;
+}
+.iconimg {
+  color: black;
+  height: 30px;
+  width: auto;
+}
+.CUsection3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  padding-bottom: 80px;
+}
+/*----------Mailing list-------------*/
+.mailinglistheader {
+  color: #37334d;
+  font-size: 28px;
+}
+
+.MLforminput {
+  display: flex;
+  flex-direction: column;
+  height: 72px;
+  justify-content: space-between;
+}
+.MLforminput input {
+  border-color: #ffd300;
+  border-style: solid;
+  width: 416px;
+  height: 28px;
+  border-width: 3px;
+  font-family: 'Trebuchet MS';
+  font-style: italic;
+  padding-left: 20px;
+}
+.MLforminput input::placeholder {
+  color: black;
+}
+
+.MLforminput input:hover,
+.MLsubmitbutton:hover {
+  border-color: #86e4be;
+  background-color: #86e4be;
+  transition: all 0.3 ease-out;
+  transition: 250ms;
+}
+.MLforminput input:focus {
+  border-color: #86e4be;
+  background-color: white;
+  outline: none;
+}
+
+.MLforminput input,
+.MLsubmitbutton {
+  border-radius: 5px;
+}
+.MLformbody {
+  display: flex;
+  flex-direction: row;
+  width: 620px;
+  justify-content: space-between;
+}
+.MLsubmitbutton {
+  background-color: #ffe980;
+  border: none;
+  height: 72px;
+  width: 161px;
+  font-family: 'Trebuchet MS';
+  font-style: italic;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.MLsubmitbutton:hover {
+  color: white;
+  transition: all 0.3 ease-out;
+  transition: 250ms;
+}
+.MLsubmittext {
+  padding-left: 40px;
+}
+/*-------------Footer------------*/
+.prefooter {
+  display: flex;
+  justify-content: center;
+}
+.block {
+  width: 70vw;
+  height: 30px;
+  background-color: #e21c21;
+}
+/*----------Mobile-------------*/
+@media only screen and (max-width: 800px) {
+  .CUsection1,
+  .CUsection2,
+  .CUsection3,
+  .map,
+  .MLformbody {
+    flex-direction: column;
+  }
+  .map,
+  .MLformbody {
+    align-items: center;
+    justify-content: center;
+  }
+  .mapheader {
+    margin-top: 100px;
+  }
+  .socialicons {
+    flex-direction: row;
+    margin-top: 20px;
+  }
+  .formrow input {
+    width: 150px;
+    height: 35px;
+    margin: 5px;
+  }
+  .formrow {
+    margin-left: -205px;
+  }
+  .formheader {
+    width: 400px;
+    font-size: 25px;
+    text-align: center;
+  }
+  .formcontainer {
+    margin-top: -100px;
+  }
+  .inputtext input {
+    width: 335px;
+  }
+  .blobtext h1 {
+    font-size: 40px;
+  }
+  .mailinglistheader {
+    font-size: 20px;
+    text-align: center;
+  }
+  .MLforminput {
+    justify-content: center;
+    flex-direction: row;
+  }
+  .MLformbody input {
+    width: 100px;
+    height: 35px;
+    margin: 10px;
+  }
+  .submittext,
+  .MLsubmittext {
+    text-align: center;
+    width: 200px;
+    margin-left: 175px;
+    margin-top: 10px;
+  }
+}

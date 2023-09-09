@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.PV_bodyparent {
+  --headerfont: 'Times New Roman';
+  --textfont: 'Montserrat';
+}
+/*-----------Header-------------------*/
+.tropicalleaf {
+  width: 277px;
+  height: 276px;
+  object-fit: cover;
+  transform: rotate(45deg);
+  margin-right: -100px;
+}
+
+.whisk {
+  width: 136px;
+  height: 136px;
+  object-fit: cover;
+  transform: rotate(100deg);
+}
+
+.PV_pagetitle {
+  font-family: var(--headerfont);
+  font-size: 98px;
+  color: #646464;
+  font-style: italic;
+  z-index: 1;
+}
+
+.PV_pageheader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0px;
+}
+
+/*-------------Body-----------------*/
+.PV_pagebody {
+  padding-left: 200px;
+  padding-right: 200px;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+/*---------Body 1 (Intro + questions)-------------*/
+.blog_logo,
+.blog_logomobile {
+  width: 269px;
+  height: 268px;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.blog_logomobile {
+  display: none;
+}
+
+.PV_body1,
+.PV_body2,
+.PV_step1,
+.PV_body4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.PV_body1 {
+  flex-direction: row;
+}
+
+.PV_body1header {
+  font-family: var(--headerfont);
+  font-style: italic;
+  font-size: 33px;
+  color: #292929;
+}
+
+.PV_bodypara,
+.PV_bodyparamobile {
+  font-family: var(--textfont);
+  font-size: 15px;
+  line-height: 25px;
+}
+
+/*-------------Body 2 (questions cont'd)----------*/
+.PV_body2 {
+  flex-direction: column;
+}
+
+/*-----------Body 3 (ingredients)------------*/
+.PV_ingredientcontainer {
+  --listwidth: 370px;
+  margin-top: 50px;
+  background-color: #bcbcbb;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 475px;
+}
+.PV_ingredients {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  height: 425px;
+  width: var(--listwidth);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.05), 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.PV_img1 {
+  border: 7px solid white;
+  height: 268px;
+  width: 476px;
+}
+
+.PV_ingredientstape {
+  display: flex;
+  flex-direction: row;
+  width: calc(var(--listwidth) + 50px);
+  margin-left: -20px;
+  margin-top: -10px;
+  justify-content: space-between;
+}
+.lefttape {
+  transform: rotate(-45deg);
+}
+.righttape {
+  transform: rotate(30deg);
+}
+.PV_ingredientstext {
+  padding: 0px 20px;
+}
+
+.PV_ingredientstext p,
+ul,
+.PV_body4 {
+  margin-top: 0px;
+  font-family: var(--textfont);
+  font-size: 15px;
+  line-height: 25px;
+}
+
+.PV_ingredientstext_head {
+  font-family: var(--headerfont), Times, serif;
+  font-style: italic;
+  font-size: 25px;
+  font-weight: 600;
+  width: var(--listwidth);
+  padding: 0px 20px;
+}
+.PV_ingredientstext b {
+  color: #646464;
+}
+
+/*---------------Body 4 (steps)----------------*/
+.PV_body4header {
+  font-family: var(--headerfont), Times, serif;
+  font-style: italic;
+  font-size: 25px;
+  font-weight: 600;
+  margin-top: 70px;
+}
+.PV_step,
+.PV_body4 {
+  flex-direction: column;
+}
+.PV_step {
+  padding: 25px;
+  width: 900px;
+}
+
+.PV_stepimgs {
+  padding: 30px 0px 40px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.arrow {
+  width: 175px;
+  margin-left: 30px;
+  margin-right: -15px;
+  transform: rotate(-50deg);
+}
+/*-------------Footer------------*/
+.prefooter {
+  display: flex;
+  justify-content: center;
+}
+.block {
+  width: 70vw;
+  height: 30px;
+  background-color: #e21c21;
+}
+/*-----------------------------*/
+@media only screen and (max-width: 1000px) {
+  .tropicalleaf {
+    width: 180px;
+    height: 180px;
+  }
+
+  .whisk {
+    width: 100px;
+    height: 100px;
+  }
+
+  .PV_pagetitle {
+    font-size: 50px;
+  }
+
+  .PV_pagebody {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .blog_logo {
+    display: none;
+  }
+  .PV_bodyparamobile {
+    display: flex;
+    flex-direction: row;
+  }
+  .blog_logomobile {
+    height: 150px;
+    width: 150px;
+    display: block;
+    align-self: center;
+  }
+  .PV_bodypara,
+  .PV_bodyparamobile {
+    width: 80vw;
+  }
+  .PV_ingredientcontainer {
+    width: 80vw;
+    height: max-content;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .PV_ingredients {
+    width: 75vw;
+  }
+  .PV_img1 {
+    margin-top: 10px;
+    width: 75vw;
+    height: auto;
+  }
+  .PV_step {
+    width: 80vw;
+  }
+  .PV_stepimgs {
+    flex-direction: column;
+  }
+  .arrow {
+    margin-top: 30px;
+    transform: rotate(20deg);
+  }
+}

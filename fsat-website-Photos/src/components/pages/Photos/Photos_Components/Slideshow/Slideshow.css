@@ -1,0 +1,87 @@
+.slideshow {
+    background-color: rgba(0, 0, 0, 0.733);
+    color: white;
+    height: 100vh;
+    z-index: 4;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .Photosbody {
+    position: relative;
+  }
+  
+  .centeredslidecontent {
+    display: flex;
+    justify-content: space-between;
+  }
+  /*-------buttons------*/
+  button {
+    border: none;
+    background-color: transparent;
+  }
+  
+  button:hover {
+    cursor: pointer;
+  }
+  
+  .slidebuttons {
+    color: white;
+    padding: 30px;
+  }
+  
+  .closebuttonparent {
+    width: 100vw;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .closebutton {
+    padding-right: 50px;
+  }
+  /*----images--*/
+  .slideimage {
+    height: 400px;
+  }
+  
+  .slideimagetitle {
+    padding: 20px;
+  }
+  
+  .imageobject {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*---------mobile--------*/
+  @media only screen and (max-width: 675px) {
+    .slideimage {
+      width: 400px;
+      height: auto;
+    }
+  }
+  
+  @media only screen and (max-width: 550px) {
+    .slideimage {
+      width: 340px;
+      height: auto;
+    }
+    .slidebuttons {
+      padding: 20px;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .slideimage {
+      width: 300px;
+      height: auto;
+    }
+    .slidebuttons {
+      padding: 5px;
+    }
+  }
+  

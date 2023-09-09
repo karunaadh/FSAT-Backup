@@ -1,0 +1,145 @@
+* {
+    padding: 0px;
+    margin: 0px;
+  }
+  .diamond {
+    --s: 300px; /*width and height of diamond*/
+    --gap: 10px; /*horizontal gap between diamond*/
+    background-color: white;
+    height: var(--s);
+    width: var(--s);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /*cut diamond shape*/
+    margin-right: 10px;
+  }
+  
+  .diamond img:hover {
+    opacity: 0.5;
+  }
+  .diamond-grid {
+    max-width: 1200px;
+    max-height: 1400px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .diamondgridparent {
+    --backgroundsize: 900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 130px;
+    background-image: url('./Diamond_images/Diamondgridbackground.jpg');
+    background-size: var(--backgroundsize);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+     z-index: 0;
+  }
+  
+  .diamond-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: -120px;
+  }
+  
+  .diamond {
+    border-width: 50px;
+    overflow: hidden;
+  }
+  .diamond img { 
+    height: calc(var(--s) + 22px);
+  }
+  
+  @media only screen and (max-width: 960px) {
+    .diamond {
+      --s: 250px;
+      margin-top: 10px;
+    }
+    .diamondgridparent {
+      --backgroundsize: 750px;
+    }
+  }
+  
+  @media only screen and (max-width: 860px) {
+    .diamond {
+      --s: 225px;
+      margin-top: 20px;
+    }
+    .diamondgridparent {
+      --backgroundsize: 680px;
+    }
+  }
+  
+  @media only screen and (max-width: 760px) {
+    .diamond {
+      --s: 200px;
+      margin-top: 30px;
+    }
+    .diamondgridparent {
+      --backgroundsize: 600px;
+    }
+  }
+  
+  @media only screen and (max-width: 660px) {
+    .diamond {
+      --s: 175px;
+      margin-top: 40px;
+    }
+    .diamondgridparent {
+      --backgroundsize: 550px;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .diamond {
+      --s: 150px;
+      margin-top: 50px;
+    }
+    .diamondgridparent {
+      --backgroundsize: 480px;
+    }
+  }
+  
+  @media only screen and (max-width: 560px) {
+    .diamond {
+      --s: 120px;
+      margin-top: 65px;
+    }
+    .diamondgridparent {
+      --backgroundsize: 400px;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .diamond {
+      --s: 95px;
+      margin-top: 75px;
+    }
+    .diamondgridparent {
+      --backgroundsize: 330px;
+    }
+  }
+  
+  @media only screen and (max-width: 400px) {
+    .diamond-row {
+      display: flex;
+      flex-direction: column;
+      margin-top: 5px;
+    }
+    .diamond {
+      --s: 300px;
+      margin-top: 20px;
+      padding: 0px;
+    }
+    .diamond-grid {
+      margin-top: -100px;
+      display: flex;
+      flex-direction: column;
+    }
+    .diamondgridparent {
+      background: none;
+    }
+  }
+  
